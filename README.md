@@ -1,7 +1,6 @@
-#Project Overview
-This notebook builds a data pipeline using the AdventureWorks database to turn raw sales data into clean, organized information for business analysis. It takes data from different sources, including a MySQL database (which is an OLTP system used for storing daily business transactions), MongoDB, and CSV/JSON files. The pipeline is designed to support OLAP (Online Analytical Processing), which means it helps you run reports and analyze trends, not just store data.
+# DS2002 Project 2 Capstone
 
-The project uses a layered approach to process the data in three steps:
+This notebook builds a data pipeline using the AdventureWorks database to turn raw sales data into clean, organized information for business analysis. It initially uses data from AdventureWorks to export data into MongoDB and into CSVs. It then takes the data from different sources, including a MySQL database (which is an OLTP system used for storing daily business transactions), MongoDB, and CSV/JSON files and inserts it into a lakehouse architecture. After this, the fact sales table is used to establish and encorperate the three layers: 
 
 Bronze layer: stores raw data.
 
